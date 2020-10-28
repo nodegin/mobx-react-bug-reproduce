@@ -1,18 +1,18 @@
 // Libs
 import React from "react";
-import { Provider, observer } from "mobx-react";
-import { Store } from "./store";
+import Testing from "./component/testing";
+import Store, { StoreProvider } from "./store";
 
 const store = new Store();
+console.log(store);
 
 const App = () => {
   return (
-    <Provider store={store}>
-      <h1>
-        123
-      </h1>
-    </Provider>
+    <StoreProvider store={store}>
+      <Testing />
+      123
+    </StoreProvider>
   );
 };
 
-export default observer(App);
+export default App;
