@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <title>HostSystem</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow" />
+    <script>
+      require('source-map-support/source-map-support.js').install()
+    </script>
+    <script>
+      var isIOS = /iphone|ipad/i.test(window.navigator.userAgent);
+      var script = document.createElement('script')
+      script.src = isIOS ? './ios.min.js' : './pc.min.js';
+      document.head.appendChild(script);
+    </script>
+  </head>
+  <body>
+    <main id="app"></main>
+  </body>
+</html>

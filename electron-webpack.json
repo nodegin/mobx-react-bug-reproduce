@@ -1,0 +1,9 @@
+{
+  "commonSourceDirectory": "src/common",
+  "staticSourceDirectory": "static",
+  "whiteListedModules": ["react-hot-loader"],
+  "renderer": {
+    "template": "static/index.ejs",
+    "webpackConfig": "webpack.renderer.js"
+  }
+}
